@@ -121,6 +121,7 @@
     <x:String x:Key="RedumperGroupBoxString">Redumper</x:String>
     <x:String x:Key="RedumperEnableVerboseOutputCheckBoxString">Enable Verbose Output</x:String>
     <x:String x:Key="EnableRefineSectorModeFlagCheckBoxString">Enable Refine Sector Mode Flag</x:String>
+    <x:String x:Key="RedumperForceOmniDriveCheckBoxString">Force OmniDrive</x:String>
     <x:String x:Key="RedumperRereadTriesLabelString">Reread Tries:</x:String>
     <x:String x:Key="PlextorLeadinRetriesLabelString">Plextor Lead-in Retries:</x:String>
     <x:String x:Key="NonRedumpOptionsCheckBoxString">Non-Redump Options</x:String>

@@ -96,6 +96,7 @@ namespace MPF.ExecutionContexts.Redumper
         public const string Rings = "--rings";
         public const string CdrErrorThreshold = "--cdr-error-threshold";
         public const string ScsiTimeout = "--scsi-timeout";
+        public const string ForceOmniDrive = "--force-omnidrive";
 
         #endregion
 

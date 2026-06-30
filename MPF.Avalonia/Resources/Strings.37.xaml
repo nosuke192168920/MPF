@@ -121,6 +121,7 @@
     <x:String x:Key="RedumperGroupBoxString">R3dump3r</x:String>
     <x:String x:Key="RedumperEnableVerboseOutputCheckBoxString">3n4813 V3r80z3 0u7pu7</x:String>
     <x:String x:Key="EnableRefineSectorModeFlagCheckBoxString">3n4813 R3f1n3 z3c70r M0d3 F149</x:String>
+    <x:String x:Key="RedumperForceOmniDriveCheckBoxString">F0rc3 0mn1dr1v3</x:String>
     <x:String x:Key="RedumperRereadTriesLabelString">R3r34d 7r13z:</x:String>
     <x:String x:Key="PlextorLeadinRetriesLabelString">P13x70r 134d-1n R37r13z:</x:String>
     <x:String x:Key="NonRedumpOptionsCheckBoxString">N0n-R3dump 0p710nz</x:String>

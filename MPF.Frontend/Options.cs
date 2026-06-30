@@ -132,6 +132,7 @@ namespace MPF.Frontend
 
             Dumping.Redumper.EnableSkeleton = source.Dumping.Redumper.EnableSkeleton;
             Dumping.Redumper.EnableVerbose = source.Dumping.Redumper.EnableVerbose;
+            Dumping.Redumper.ForceOmniDrive = source.Dumping.Redumper.ForceOmniDrive;
             Dumping.Redumper.LeadinRetryCount = source.Dumping.Redumper.LeadinRetryCount;
             Dumping.Redumper.NonRedumpMode = source.Dumping.Redumper.NonRedumpMode;
             Dumping.Redumper.DriveType = source.Dumping.Redumper.DriveType;

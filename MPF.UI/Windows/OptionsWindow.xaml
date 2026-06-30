@@ -415,7 +415,7 @@
                         </GroupBox>
 
                         <GroupBox Margin="5,5,5,5" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Header="{DynamicResource RedumperGroupBoxString}">
-                            <UniformGrid Columns="2" Rows="8">
+                            <UniformGrid Columns="2" Rows="9">
                                 <CheckBox VerticalAlignment="Center" Content="{DynamicResource RedumperEnableVerboseOutputCheckBoxString}"
                                           IsChecked="{Binding Options.Dumping.Redumper.EnableVerbose}"
                                           ToolTip="Enable verbose output in logs" Margin="0,4"
@@ -425,6 +425,12 @@
                                           IsChecked="{Binding Options.Dumping.Redumper.RefineSectorMode}"
                                           ToolTip="Enable the refine sector mode flag by default" Margin="0,4"
                                 />
+
+                                <CheckBox VerticalAlignment="Center" Content="{DynamicResource RedumperForceOmniDriveCheckBoxString}"
+                                          IsChecked="{Binding Options.Dumping.Redumper.ForceOmniDrive}"
+                                          ToolTip="Force OmniDrive detection" Margin="0,4"
+                                />
+                                <Label/> <!-- Empty label for padding -->
 
                                 <Label Content="{DynamicResource RedumperRereadTriesLabelString}" VerticalAlignment="Center" HorizontalAlignment="Right"/>
                                 <TextBox VerticalAlignment="Center" VerticalContentAlignment="Center" Width="200" HorizontalAlignment="Left"

@@ -11,6 +11,9 @@ namespace MPF.ExecutionContexts.Redumper
         public const string EnableVerbose = "RedumperEnableVerbose";
         public const bool EnableVerboseDefault = false;
 
+        public const string ForceOmniDrive = "RedumperForceOmniDrive";
+        public const bool ForceOmniDriveDefault = false;
+
         public const string LeadinRetryCount = "RedumperLeadinRetryCount";
         public const int LeadinRetryCountDefault = 4;
 

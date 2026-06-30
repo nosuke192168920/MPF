@@ -117,6 +117,7 @@
     <system:String x:Key="RedumperGroupBoxString">Redumper</system:String>
     <system:String x:Key="RedumperEnableVerboseOutputCheckBoxString">Włącz szczegółowe wyjście</system:String>
     <system:String x:Key="EnableRefineSectorModeFlagCheckBoxString">Włącz flagę trybu poprawy sektorów</system:String>
+    <system:String x:Key="RedumperForceOmniDriveCheckBoxString">Wymuś OmniDrive</system:String>
     <system:String x:Key="RedumperRereadTriesLabelString">Liczba prób ponownego odczytu:</system:String>
     <system:String x:Key="PlextorLeadinRetriesLabelString">Liczba prób lead-in Plextor:</system:String>
     <system:String x:Key="NonRedumpOptionsCheckBoxString">Opcje nie-Redump</system:String>

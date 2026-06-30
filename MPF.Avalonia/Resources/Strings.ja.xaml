@@ -116,6 +116,7 @@
     <x:String x:Key="RedumperGroupBoxString">Redumper</x:String>
     <x:String x:Key="RedumperEnableVerboseOutputCheckBoxString">詳細出力を有効にする</x:String>
     <x:String x:Key="EnableRefineSectorModeFlagCheckBoxString">Refine Sector モードフラグを有効にする</x:String>
+    <x:String x:Key="RedumperForceOmniDriveCheckBoxString">OmniDrive を強制</x:String>
     <x:String x:Key="RedumperRereadTriesLabelString">再読み込み回数:</x:String>
     <x:String x:Key="PlextorLeadinRetriesLabelString">Plextor リードイン再試行回数:</x:String>
     <x:String x:Key="NonRedumpOptionsCheckBoxString">非 Redump オプション</x:String>

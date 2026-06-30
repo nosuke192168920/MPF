@@ -117,6 +117,7 @@
     <system:String x:Key="RedumperGroupBoxString">Redumper</system:String>
     <system:String x:Key="RedumperEnableVerboseOutputCheckBoxString">상세 출력 활성화</system:String>
     <system:String x:Key="EnableRefineSectorModeFlagCheckBoxString">Refine Sector 모드 플래그 활성화</system:String>
+    <system:String x:Key="RedumperForceOmniDriveCheckBoxString">OmniDrive 강제</system:String>
     <system:String x:Key="RedumperRereadTriesLabelString">재읽기 시도 횟수:</system:String>
     <system:String x:Key="PlextorLeadinRetriesLabelString">Plextor 리드인 재시도:</system:String>
     <system:String x:Key="NonRedumpOptionsCheckBoxString">비-Redump 옵션</system:String>

@@ -18,6 +18,12 @@ namespace MPF.ExecutionContexts.Redumper
         public bool EnableVerbose { get; set; } = SettingConstants.EnableVerboseDefault;
 
         /// <summary>
+        /// Force OmniDrive detection
+        /// </summary>
+        /// <remarks>Version 1 and greater</remarks>
+        public bool ForceOmniDrive { get; set; } = SettingConstants.ForceOmniDriveDefault;
+
+        /// <summary>
         /// Default number of redumper Plextor leadin retries
         /// </summary>
         /// <remarks>Version 1 and greater</remarks>

@@ -116,6 +116,7 @@
     <x:String x:Key="RedumperGroupBoxString">Redumper</x:String>
     <x:String x:Key="RedumperEnableVerboseOutputCheckBoxString">Подробный вывод</x:String>
     <x:String x:Key="EnableRefineSectorModeFlagCheckBoxString">Уточнённого режима секторов</x:String>
+    <x:String x:Key="RedumperForceOmniDriveCheckBoxString">Принудительно OmniDrive</x:String>
     <x:String x:Key="RedumperRereadTriesLabelString">Повторные чтения:</x:String>
     <x:String x:Key="PlextorLeadinRetriesLabelString">Повторы Lead-in (Plextor):</x:String>
     <x:String x:Key="NonRedumpOptionsCheckBoxString">Параметры вне Redump</x:String>

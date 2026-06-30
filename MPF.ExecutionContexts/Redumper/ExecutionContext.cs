@@ -126,6 +126,7 @@ namespace MPF.ExecutionContexts.Redumper
             [FlagStrings.Rings] = new FlagInput(FlagStrings.Rings),
             [FlagStrings.CdrErrorThreshold] = new Int32Input(FlagStrings.CdrErrorThreshold),
             [FlagStrings.ScsiTimeout] = new Int32Input(FlagStrings.ScsiTimeout),
+            [FlagStrings.ForceOmniDrive] = new FlagInput(FlagStrings.ForceOmniDrive),
 
             // Undocumented
             [FlagStrings.Debug] = new FlagInput(FlagStrings.Debug),
@@ -230,6 +231,7 @@ namespace MPF.ExecutionContexts.Redumper
                     FlagStrings.Rings,
                     FlagStrings.CdrErrorThreshold,
                     FlagStrings.ScsiTimeout,
+                    FlagStrings.ForceOmniDrive,
 
                     // Undocumented
                     FlagStrings.Debug,
@@ -432,6 +434,12 @@ namespace MPF.ExecutionContexts.Redumper
             {
                 this[FlagStrings.RefineSectorMode] = true;
                 (_inputs[FlagStrings.RefineSectorMode] as FlagInput)?.SetValue(true);
+            }
+
+            if (dumpSettings.ForceOmniDrive)
+            {
+                this[FlagStrings.ForceOmniDrive] = true;
+                (_inputs[FlagStrings.ForceOmniDrive] as FlagInput)?.SetValue(true);
             }
         }
 

@@ -116,6 +116,7 @@
     <x:String x:Key="RedumperGroupBoxString">Redumper</x:String>
     <x:String x:Key="RedumperEnableVerboseOutputCheckBoxString">Activer la sortie détaillée</x:String>
     <x:String x:Key="EnableRefineSectorModeFlagCheckBoxString">Activer flag raffinement secteur</x:String>
+    <x:String x:Key="RedumperForceOmniDriveCheckBoxString">Forcer OmniDrive</x:String>
     <x:String x:Key="RedumperRereadTriesLabelString">Nombre de relectures :</x:String>
     <x:String x:Key="PlextorLeadinRetriesLabelString">Relectures Plextor Lead-in :</x:String>
     <x:String x:Key="NonRedumpOptionsCheckBoxString">Options non-Redump</x:String>
