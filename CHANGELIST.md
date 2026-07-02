@@ -1,4 +1,4 @@
-### WIP (xxxx-xx-xx)
+### 3.8.2 (2026-07-01)
 
 - Output used configuration path for commandline programs
 - Resolve tilde-prefixed paths for binaries
@@ -11,6 +11,9 @@
 - Fix detection issue for floppy disks
 - Fix WPF issue with older .NET versions
 - Fix message when clipboard is disabled
+- Update RedumpLib to 2.0.8
+- Attempt to handle generic disc labels again
+- Add temporary hack for multiline Dat field output
 
 ### 3.8.1 (2026-06-26)
 
