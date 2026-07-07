@@ -415,6 +415,8 @@ namespace MPF.Frontend.Tools
 
             options.Dumping.Redumper.EnableSkeleton = GetBooleanSetting(source, RedumperConstants.EnableSkeleton, RedumperConstants.EnableSkeletonDefault);
             options.Dumping.Redumper.EnableVerbose = GetBooleanSetting(source, RedumperConstants.EnableVerbose, RedumperConstants.EnableVerboseDefault);
+            // Load ForceOmniDrive setting (added for --force-omnidrive support)
+            options.Dumping.Redumper.ForceOmniDrive = GetBooleanSetting(source, RedumperConstants.ForceOmniDrive, RedumperConstants.ForceOmniDriveDefault);
             options.Dumping.Redumper.LeadinRetryCount = GetInt32Setting(source, RedumperConstants.LeadinRetryCount, RedumperConstants.LeadinRetryCountDefault);
             options.Dumping.Redumper.NonRedumpMode = GetBooleanSetting(source, "RedumperNonRedumpMode", false);
             valueString = GetStringSetting(source, RedumperConstants.DriveType, RedumperConstants.DriveTypeDefault.ToString());
@@ -509,6 +511,8 @@ namespace MPF.Frontend.Tools
 
                 { RedumperConstants.EnableSkeleton, options.Dumping.Redumper.EnableSkeleton.ToString() },
                 { RedumperConstants.EnableVerbose, options.Dumping.Redumper.EnableVerbose.ToString() },
+                // Persist ForceOmniDrive setting (added for --force-omnidrive support)
+                { RedumperConstants.ForceOmniDrive, options.Dumping.Redumper.ForceOmniDrive.ToString() },
                 { RedumperConstants.LeadinRetryCount, options.Dumping.Redumper.LeadinRetryCount.ToString() },
                 { "RedumperNonRedumpMode", options.Dumping.Redumper.NonRedumpMode.ToString() },
                 { RedumperConstants.DriveType, options.Dumping.Redumper.DriveType.ToString() },
