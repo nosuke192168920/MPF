@@ -1,3 +1,21 @@
+### 3.8.3 (2026-07-06)
+
+- Add live tool output console for the Linux GUI (gmipf)
+- Normalize null checks in recent code
+- Cleanup around Avalonia code
+- Fix language menu requiring two clicks in the Avalonia GUI (gmipf)
+- Add some explicit comments and code for clarity
+- Be more verbose about program path resolution
+- Use updated version of ResolvePath from IO
+- Make program support sets more obvious
+- Detect and list USB floppy drives on Linux (gmipf)
+- Fix media type dropdown not updating dumping parameters (gmipf)
+- Fix media type sticking when switching drives (gmipf)
+- Clean up XAML files with auto-formatting
+- Strip out majority of commented credentials code
+- Update RedumpLib to 2.1.0
+- Update Serialization to 3.0.1 and BOS to 3.7.1
+
 ### 3.8.2 (2026-07-01)
 
 - Output used configuration path for commandline programs

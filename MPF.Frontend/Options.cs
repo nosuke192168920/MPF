@@ -88,6 +88,7 @@ namespace MPF.Frontend
 
             GUI.CopyUpdateUrlToClipboard = source.GUI.CopyUpdateUrlToClipboard;
             GUI.OpenLogWindowAtStartup = source.GUI.OpenLogWindowAtStartup;
+            GUI.ToolConsoleAutoClose = source.GUI.ToolConsoleAutoClose;
 
             GUI.DefaultInterfaceLanguage = source.GUI.DefaultInterfaceLanguage;
             GUI.ShowDebugViewMenuItem = source.GUI.ShowDebugViewMenuItem;
@@ -148,8 +149,8 @@ namespace MPF.Frontend
             Processing.ProtectionScanning.IncludeDebugProtectionInformation = source.Processing.ProtectionScanning.IncludeDebugProtectionInformation;
 
             Processing.Login.PullAllInformation = source.Processing.Login.PullAllInformation;
-            Processing.Login.RedumpOrgUsername = source.Processing.Login.RedumpOrgUsername;
-            Processing.Login.RedumpOrgPassword = source.Processing.Login.RedumpOrgPassword;
+            Processing.Login.RedumpOrgUsername = null; // TODO: Remove entirely
+            Processing.Login.RedumpOrgPassword = null; // TODO: Remove entirely
             Processing.Login.RetrieveMatchInformation = source.Processing.Login.RetrieveMatchInformation;
             Processing.Login.AttemptCount = source.Processing.Login.AttemptCount;
             Processing.Login.TimeoutSeconds = source.Processing.Login.TimeoutSeconds;
@@ -445,6 +446,12 @@ namespace MPF.Frontend
         /// <remarks>Version 1 and greater</remarks>
         public bool OpenLogWindowAtStartup { get; set; } = true;
 
+        /// <summary>
+        /// Automatically close the separate tool-output window when the dumping program exits
+        /// </summary>
+        /// <remarks>Version 1 and greater; currently used by the Linux GUI tool-output window</remarks>
+        public bool ToolConsoleAutoClose { get; set; } = true;
+
         #endregion
 
         #region Interface
@@ -655,13 +662,14 @@ namespace MPF.Frontend
         /// Username for redump.org, requires <see cref="RedumpOrgPassword"/>
         /// </summary>
         /// <remarks>Version 1 and greater</remarks>
+        /// TODO: Remove in version 2 of configuration
         public string? RedumpOrgUsername { get; set; } = string.Empty;
 
         /// <summary>
         /// Password for redump.org, requires <see cref="RedumpOrgUsername"/>
         /// </summary>
         /// <remarks>Version 1 and greater</remarks>
-        // TODO: Figure out a way to keep this encrypted in some way, BASE64 to start?
+        /// TODO: Remove in version 2 of configuration
         public string? RedumpOrgPassword { get; set; } = string.Empty;
 
         /// <summary>

@@ -367,6 +367,7 @@ namespace MPF.Frontend.Tools
 
             options.GUI.CopyUpdateUrlToClipboard = GetBooleanSetting(source, "CopyUpdateUrlToClipboard", true);
             options.GUI.OpenLogWindowAtStartup = GetBooleanSetting(source, "OpenLogWindowAtStartup", true);
+            options.GUI.ToolConsoleAutoClose = GetBooleanSetting(source, "ToolConsoleAutoClose", true);
 
             valueString = GetStringSetting(source, "DefaultInterfaceLanguage", InterfaceLanguage.AutoDetect.ShortName());
             options.GUI.DefaultInterfaceLanguage = valueString.ToInterfaceLanguage();
@@ -432,8 +433,8 @@ namespace MPF.Frontend.Tools
             options.Processing.ProtectionScanning.IncludeDebugProtectionInformation = GetBooleanSetting(source, "IncludeDebugProtectionInformation", false);
 
             options.Processing.Login.PullAllInformation = GetBooleanSetting(source, "PullAllInformation", false);
-            options.Processing.Login.RedumpOrgUsername = GetStringSetting(source, "RedumpOrgUsername", GetStringSetting(source, "RedumpUsername", string.Empty));
-            options.Processing.Login.RedumpOrgPassword = GetStringSetting(source, "RedumpOrgPassword", GetStringSetting(source, "RedumpPassword", string.Empty));
+            options.Processing.Login.RedumpOrgUsername = null; // TODO: Remove entirely
+            options.Processing.Login.RedumpOrgPassword = null; // TODO: Remove entirely
             options.Processing.Login.RetrieveMatchInformation = GetBooleanSetting(source, "RetrieveMatchInformation", true);
             options.Processing.Login.AttemptCount = GetInt32Setting(source, "AttemptCount", 3);
             options.Processing.Login.TimeoutSeconds = GetInt32Setting(source, "TimeoutSeconds", 30);
@@ -541,10 +542,11 @@ namespace MPF.Frontend.Tools
 
                 { "VerboseLogging", options.VerboseLogging.ToString() },
                 { "OpenLogWindowAtStartup", options.GUI.OpenLogWindowAtStartup.ToString() },
+                { "ToolConsoleAutoClose", options.GUI.ToolConsoleAutoClose.ToString() },
 
                 { "RetrieveMatchInformation", options.Processing.Login.RetrieveMatchInformation.ToString() },
-                { "RedumpOrgUsername", options.Processing.Login.RedumpOrgUsername },
-                { "RedumpOrgPassword", options.Processing.Login.RedumpOrgPassword },
+                { "RedumpOrgUsername", null }, // TODO: Remove entirely
+                { "RedumpOrgPassword", null }, // TODO: Remove entirely
                 { "AttemptCount", options.Processing.Login.AttemptCount.ToString() },
                 { "TimeoutSeconds", options.Processing.Login.TimeoutSeconds.ToString() },
             };
